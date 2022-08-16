@@ -1,18 +1,19 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1660616040960-f84bf0ccc57c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=369&q=80"); 
+    background-repeat: inherit;
+    min-height: 100%;
+}
 ul{
     list-style: none;
+    box-sizing: border-box;
+    margin: 10px;
 }
 li{
-    margin-left: 120px;
-    text-decoration: dashed;
     background-color: aquamarine;
-    border: 3px solid gray;
-    box-sizing: border-box;
+    border: 1px solid gray;
 }
  .delete-btn {
-    font-size: 17px;
-    
-    border: none;
-
+    font-size: 15px;   
     border-radius: 4px;
     padding-top: 4px;
  }

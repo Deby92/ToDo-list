@@ -29,7 +29,14 @@ const Home = () => {
 
 	}
 	return (
-		<div className="App text-center my-5">
+		<div className="App App d-flex container-fluid row justify-content-center mt-5" style={{
+			borderRadius: "4%",
+			border: "3px solid black",
+			backgroundColor: "cyan",
+			width: "500px",
+			margin: "auto",
+			listStyle: "none",
+		}}>
 			<h1 className="text">ToDo list App!</h1>
 
 			<input 
@@ -43,10 +50,10 @@ const Home = () => {
 			className="btn_container"
 			onClick={() => addItem()}>Add</button>
 
-			<ul>
+			<ul className="list-group list-group-flush d-flex">
 				{items.map(item => {
 					return(
-						<li key={item.id}>{item.value} <button className="delete-btn" onClick={() => deleteItem(item.id)}><BsFillTrashFill/></button></li>
+						<li key={item.id}>{item.value} <button className="list-group-item float-end bg-transparent" onClick={() => deleteItem(item.id)}><BsFillTrashFill/></button></li>
 					)
 				})}
 			</ul>
