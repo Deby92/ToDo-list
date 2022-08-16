@@ -29,21 +29,24 @@ const Home = () => {
 
 	}
 	return (
-		<div className="App justify-content-center my-5">
+		<div className="App text-center my-5">
 			<h1 className="text">ToDo list App!</h1>
 
 			<input 
+				className="input text-center p-4"
 				type="text"
 				placeholder="Add Item here"
 				value={newItem}
 				onChange={e => setNewItem(e.target.value)}
 			/>
-			<button onClick={() => addItem()}>Add</button>
+			<button 
+			className="btn_container"
+			onClick={() => addItem()}>Add</button>
 
 			<ul>
 				{items.map(item => {
 					return(
-						<li key={item.id}>{item.value} <button onClick={() => deleteItem(item.id)}><BsFillTrashFill/></button></li>
+						<li key={item.id}>{item.value} <button className="delete-btn" onClick={() => deleteItem(item.id)}><BsFillTrashFill/></button></li>
 					)
 				})}
 			</ul>
