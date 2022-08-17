@@ -8,6 +8,7 @@ import rigoImage from "../../img/rigo-baby.jpg";
 const Home = () => {
 	const [newItem, setNewItem] = useState("");
 	const [items, setItems] = useState([]);
+	
 
 	const addItem = () => {
 		if(!newItem) {
@@ -45,6 +46,7 @@ const Home = () => {
 				placeholder="Add Item here"
 				value={newItem}
 				onChange={e => setNewItem(e.target.value)}
+				
 			/>
 			<button 
 			className="btn_container"
